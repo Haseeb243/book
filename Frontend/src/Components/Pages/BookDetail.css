@@ -1,0 +1,143 @@
+body{
+  background-color: #1a1a1a; /* Dark background for a magical feel */
+  color: #f1c40f; /* Gold text */
+  font-family: 'Cinzel', serif; /* Hogwarts-style font */
+  margin: 0;
+  padding: 0;
+}
+.header {
+    background-color: #7f0000; /* Maroon for Gryffindor theme */
+    height: 60px; /* Slightly taller for prominence */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header ul li a {
+    margin: 27px;
+    font-size: 17px;
+    color: #f1c40f; /* Gold text */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase; /* Adds a formal touch */
+}
+
+.header ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* White on hover */
+}
+
+.header ul li button {
+    background-color: #f1c40f; /* Gold button */
+    border-radius: 20px;
+    width: 80px; /* Slightly wider */
+    height: 30px; /* Slightly taller */
+    font-size: 17px;
+    margin-right: 40px;
+    color: #7f0000; /* Maroon text */
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header ul li button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+.logo {
+    width: 60px; /* Slightly larger */
+    margin-left: 30px;
+}
+
+.book-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Cinzel', serif; /* Hogwarts-style font */
+  gap: 20px;
+  background-color: #1a1a1a; /* Dark background for a magical feel */
+  color: #f1c40f; /* Gold text */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.book-info {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.book-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #f1c40f; /* Gold text */
+  font-family: 'MedievalSharp', cursive; /* Hogwarts-style font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.book-info h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #e63946; /* Red for emphasis */
+  font-family: 'Cinzel', serif; /* Hogwarts-style font */
+}
+
+.book-info p {
+  margin: 10px 0;
+  color: #f1c40f; /* Gold text */
+  font-size: 1.1em;
+}
+
+.book-info p strong {
+  color: #e63946; /* Red for emphasis */
+}
+
+.buy-now-button {
+  background-color: #7f0000; /* Maroon for Gryffindor theme */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  font-family: 'Cinzel', serif; /* Hogwarts-style font */
+  text-transform: uppercase; /* Adds a formal touch */
+}
+
+.buy-now-button:hover {
+  background-color: #6a0000; /* Darker maroon on hover */
+}
+
+.book-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.book-image img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #f1c40f; /* Gold border */
+  box-shadow: 0 4px 8px rgba(241, 196, 15, 0.3); /* Gold shadow */
+}

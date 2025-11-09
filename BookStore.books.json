@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "67716de6ae1e04e933c70469"
+  },
+  "id": 1,
+  "name": "Harry Potter and the Sorcerer’s Stone (1997)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book1.jpg",
+  "title": "J.K. Rowling",
+  "description": "Harry Potter, a seemingly ordinary boy, discovers on his eleventh birthday that he is a wizard and has been accepted to Hogwarts School of Witchcraft and Wizardry. As he adjusts to this magical new world, he befriends Ron and Hermione, learns about his parents' tragic past, and uncovers the mystery of the Sorcerer’s Stone—an object that grants immortality. But lurking in the shadows is Lord Voldemort, the dark wizard responsible for his parents' deaths, who seeks to return to power."
+},
+{
+  "_id": {
+    "$oid": "67db18d98de08f839b73363e"
+  },
+  "id": 2,
+  "name": "Harry Potter and the Chamber of Secrets (1998)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book2.jpg",
+  "title": "J.K. Rowling",
+  "description": "Returning for his second year at Hogwarts, Harry finds the school plagued by terrifying attacks that leave students mysteriously petrified. The legend of the Chamber of Secrets speaks of a hidden chamber within the castle, home to a deadly monster controlled by the Heir of Slytherin. As Harry and his friends investigate, they uncover dark secrets about Tom Riddle, the young version of Voldemort, and come face-to-face with a monstrous Basilisk in a fight to save Hogwarts.\n\n"
+},
+{
+  "_id": {
+    "$oid": "67db190f8de08f839b73363f"
+  },
+  "id": 3,
+  "name": "Harry Potter and the Prisoner of Azkaban (1999)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book3.jpg",
+  "title": "J.K. Rowling",
+  "description": "As Harry enters his third year at Hogwarts, he learns that Sirius Black, a notorious prisoner, has escaped from Azkaban and is believed to be hunting him. But as he delves deeper, Harry discovers shocking truths about his parents’ past, his connection to Sirius, and the betrayal that led to their deaths. With the help of Hermione’s Time-Turner, he embarks on a daring mission to save an innocent life, proving that the past is never as it seems.\n\n\n"
+},
+{
+  "_id": {
+    "$oid": "67db192f8de08f839b733640"
+  },
+  "id": 4,
+  "name": "Harry Potter and the Goblet of Fire (2000)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book4.jpg",
+  "title": "J.K. Rowling",
+  "description": "Harry Potter and the Goblet of Fire (2000)\n\n"
+},
+{
+  "_id": {
+    "$oid": "67db19728de08f839b733641"
+  },
+  "id": 5,
+  "name": "Harry Potter and the Order of the Phoenix (2003)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book5.jpg",
+  "title": "J.K. Rowling",
+  "description": "With Voldemort’s return, Harry finds himself at odds with the Ministry of Magic, which refuses to believe the dark lord has risen again. Meanwhile, Hogwarts is taken over by the cruel Dolores Umbridge, forcing Harry to secretly train his classmates in defense against the dark arts by forming Dumbledore’s Army. As visions of Voldemort’s mind torment him, Harry is drawn into a devastating battle at the Ministry of Magic, where he suffers his greatest loss yet.\n"
+},
+{
+  "_id": {
+    "$oid": "67db19c88de08f839b733642"
+  },
+  "id": 6,
+  "name": "Harry Potter and the Half-Blood Prince (2005)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book6.jpg",
+  "title": "J.K. Rowling",
+  "description": "As Voldemort’s influence grows, Harry and Dumbledore work together to uncover the dark wizard’s past and the secret behind his immortality—Horcruxes, objects containing pieces of his soul. Meanwhile, Hogwarts is filled with suspicion as Draco Malfoy takes on a dangerous mission, and Professor Snape’s true loyalty remains a mystery. In a heartbreaking climax, Dumbledore is murdered, leaving Harry with the daunting task of finishing what his mentor started."
+},
+{
+  "_id": {
+    "$oid": "67db19ce8de08f839b733643"
+  },
+  "id": 7,
+  "name": "Harry Potter and the Deathly Hallows (2007)",
+  "price": 32,
+  "category": "fantasy",
+  "image": "/book7.jpg",
+  "title": "J.K. Rowling",
+  "description": "Harry, Ron, and Hermione abandon Hogwarts to embark on a perilous journey to find and destroy Voldemort’s Horcruxes. With the wizarding world plunged into war, they uncover the legend of the Deathly Hallows, three powerful magical objects that could change the course of the battle. The final showdown at Hogwarts brings old allies and enemies together, culminating in an epic confrontation where Harry must make the ultimate sacrifice to defeat Voldemort once and for all."
+},
+{
+  "_id": {
+    "$oid": "68e3f7f15c665030f90aec11"
+  },
+  "name": "harry ",
+  "price": 12,
+  "category": "fantasy",
+  "image": "/1759770609308-labour service.png",
+  "title": "ahs",
+  "description": "sakhd",
+  "__v": 0
+}]

@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=MedievalSharp&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #1a1a1a; /* Dark background for a magical feel */
+    color: #f1c40f; /* Gold text */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header */
+.header {
+    background-color: #7f0000; /* Maroon for Gryffindor theme */
+    height: 60px; /* Slightly taller for prominence */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header ul li a {
+    margin: 27px;
+    font-size: 17px;
+    color: #f1c40f; /* Gold text */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase; /* Adds a formal touch */
+}
+
+.header ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* White on hover */
+}
+
+.header ul li button {
+    background-color: #f1c40f; /* Gold button */
+    border-radius: 20px;
+    width: 80px; /* Slightly wider */
+    height: 30px; /* Slightly taller */
+    font-size: 17px;
+    margin-right: 40px;
+    color: #7f0000; /* Maroon text */
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header ul li button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+.logo {
+    width: 60px; /* Slightly larger */
+    margin-left: 30px;
+}
+
+/* Banner Section */
+.bannerSection {
+    display: flex;
+    background-image: url('./Components/images/hogwarts-castle.jpg'); /* Add your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    color: #f1c40f; /* Gold text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to text for better readability */
+}
+
+.leftsection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftsection h1 {
+    font-size: 50px;
+    color: #f1c40f; /* Gold text */
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bolder;
+    margin-top: 5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.leftsection h1 span {
+    color: #e63946; /* Red for emphasis */
+}
+
+.leftsection p {
+    font-size: medium;
+    text-align: center;
+    padding: 10px;
+    color: #f1c40f; /* Gold text */
+}
+
+.inputWrapper {
+    display: flex;
+    background-color: #2d2d2d;
+    border: 1px solid #f1c40f; /* Gold border */
+    height: 40px;
+    align-items: center;
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 20px; /* Rounded edges */
+}
+
+.inputWrapper img {
+    height: 35px;
+    padding: 5px;
+}
+
+.inputWrapper input {
+    background-color: #ffffff;
+    font-size: small;
+    padding: 9px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.rightsection {
+    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightsection img {
+    height: 75%;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+
+/* Catalog Section */
+.Catalog {
+    background-color: #2c3e50; /* Dark background */
+}
+
+.Catalog h1 {
+    margin-top: 20px;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f1c40f; /* Gold text */
+    text-align: center;
+}
+
+.Catalog p {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Product Card */
+.product-card {
+    background-color: #2c3e50; /* Dark background */
+    border: 1px solid #f1c40f; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(241, 196, 15, 0.3); /* Gold shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(241, 196, 15, 0.5); /* Stronger gold shadow */
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #f1c40f; /* Gold text */
+}
+
+.product-card h4 span button {
+    background-color: #68ff72; /* Green button */
+    border-radius: 15px;
+    font-size: small;
+    border: 1px solid red;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #ffffff; /* White text */
+    margin: 10px 0 20px;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-footer h3 {
+    font-size: 1.2rem;
+    color: #e63946; /* Red text */
+    font-weight: bold;
+}
+
+.product-footer button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #457b9d; /* Blue button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-footer button:hover {
+    background-color: #1d3557; /* Darker blue on hover */
+}
+
+/* Courses Section */
+.Courses-top {
+    background-color: #fff;
+}
+
+.Courses-top h1 {
+    font-size: 2rem;
+    margin-top: 3.2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.Courses-top h1 span {
+    color: #e2340d; /* Red for emphasis */
+}
+
+.Courses-top p {
+    text-align: center;
+    padding: 15px;
+    color: #6b6a6a; /* Gray text */
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: auto;
+    box-shadow: 0 4px 8px ;
+    background-color: (0, 0, 0, 0.1);
+}
+
+.small-cards .product-card {
+    width: 250px; /* Further reduced width for small-cards */
+    height: auto;
+    margin: 10px;
+}
+
+.small-cards .product-image {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.small-cards .product-info {
+    font-size: 0.8rem;
+}
+
+/* Login Form */
+
+.login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: gold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+
+
+
+/* Signup Link */
+.signup p span {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Logout Button */
+.logout-button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #e60000;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}

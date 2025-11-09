@@ -1,0 +1,34 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Build outputs
+Frontend/dist/
+Frontend/.vite/
+Backend/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*
+Backend/.env
+Frontend/.env
+
+# Local documentation
+docs/
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

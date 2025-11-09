@@ -1,0 +1,79 @@
+/* Footer Container */
+.footer {
+  background-color: #1a1a1a; /* Dark background for a magical feel */
+  color: #f1c40f; /* Gold text */
+  padding: 40px 20px;
+  font-family: 'Cinzel', serif; /* Hogwarts-style font */
+  text-align: center;
+  border-top: 2px solid #f1c40f; /* Gold border at the top */
+  margin-top: 40px; /* Add space above the footer */
+  position: relative; /* Ensure footer stays in the document flow */
+  z-index: 1; /* Ensure footer stays below other elements */
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Quick Links Section */
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #f1c40f; /* Gold text */
+  font-family: 'MedievalSharp', cursive; /* Hogwarts-style font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a {
+  color: #f1c40f; /* Gold text */
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #e63946; /* Red on hover */
+}
+
+/* Social Media Icons Section */
+.footer-social .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social .social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.footer-social .social-icons img:hover {
+  transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #f1c40f; /* Gold border */
+  padding-top: 10px;
+  font-size: 0.9em;
+  color: #f1c40f; /* Gold text */
+}
