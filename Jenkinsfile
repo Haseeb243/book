@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // Define deployment target EC2 instance
-        DEPLOY_SERVER = 'http://ec2-3-85-243-204.compute-1.amazonaws.com'
+        DEPLOY_SERVER = 'ubuntu@ec2-3-85-243-204.compute-1.amazonaws.com'
         DEPLOY_PATH = '/home/ubuntu/book'
         SSH_KEY = credentials('ec2-ssh-key') // Add EC2 SSH key in Jenkins credentials
     }
