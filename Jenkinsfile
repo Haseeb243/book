@@ -2,10 +2,8 @@ pipeline {
     agent any
     
     environment {
-        // Define deployment target EC2 instance
-        DEPLOY_SERVER = 'ubuntu@ec2-3-85-243-204.compute-1.amazonaws.com'
+        // Deploy on the same EC2 where Jenkins is running (localhost)
         DEPLOY_PATH = '/home/ubuntu/book'
-        SSH_KEY = credentials('ec2-ssh-key') // Add EC2 SSH key in Jenkins credentials
     }
     
     stages {
@@ -16,21 +14,19 @@ pipeline {
             }
         }
         
-        stage('Deploy to EC2') {
+        stage('Deploy Locally') {
             steps {
                 script {
-                    echo 'Deploying to EC2 instance...'
+                    echo 'Deploying on Jenkins EC2 instance (localhost)...'
                     
-                    // SSH into EC2 and deploy
+                    // Deploy locally on the same machine where Jenkins runs
                     sh """
-                        ssh -o StrictHostKeyChecking=no -i ${SSH_KEY} ${DEPLOY_SERVER} '
-                            cd ${DEPLOY_PATH} && \
-                            git pull origin main && \
-                            docker compose down && \
-                            docker compose build --no-cache && \
-                            docker compose up -d && \
-                            echo "Deployment completed successfully!"
-                        '
+                        cd ${DEPLOY_PATH}
+                        git pull origin main
+                        docker compose down
+                        docker compose build --no-cache
+                        docker compose up -d
+                        echo "Deployment completed successfully!"
                     """
                 }
             }
@@ -42,10 +38,8 @@ pipeline {
                     echo 'Verifying deployment...'
                     
                     sh """
-                        ssh -o StrictHostKeyChecking=no -i ${SSH_KEY} ${DEPLOY_SERVER} '
-                            cd ${DEPLOY_PATH} && \
-                            docker compose ps
-                        '
+                        cd ${DEPLOY_PATH}
+                        docker compose ps
                     """
                 }
             }
@@ -55,7 +49,7 @@ pipeline {
     post {
         success {
             echo '✅ Pipeline executed successfully!'
-            echo 'Application deployed to EC2: http://ec2-18-215-168-23.compute-1.amazonaws.com'
+            echo 'Application deployed to EC2: http://ec2-3-85-243-204.compute-1.amazonaws.com'
         }
         failure {
             echo '❌ Pipeline failed. Check the logs for details.'
