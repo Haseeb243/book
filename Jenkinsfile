@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        // Deploy on the same EC2 where Jenkins is running (localhost)
-        DEPLOY_PATH = '/home/ubuntu/book'
+        // Deploy on the same EC2 where Jenkins is running (using Jenkins workspace)
+        DEPLOY_PATH = '.'  // Use current workspace directory
     }
     
     stages {
@@ -21,7 +21,6 @@ pipeline {
                     
                     // Deploy locally on the same machine where Jenkins runs
                     sh """
-                        cd ${DEPLOY_PATH}
                         git pull origin main
                         docker compose down
                         docker compose build --no-cache
@@ -38,7 +37,6 @@ pipeline {
                     echo 'Verifying deployment...'
                     
                     sh """
-                        cd ${DEPLOY_PATH}
                         docker compose ps
                     """
                 }
