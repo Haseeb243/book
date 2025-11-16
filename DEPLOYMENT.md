@@ -1,4 +1,4 @@
-# Docker Deployment Guide for EC2
+ # Docker Deployment Guide for EC2
 
 ## 📋 Prerequisites
 - EC2 instance (Ubuntu 22.04 LTS recommended)
