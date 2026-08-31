@@ -11,10 +11,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function main() {
-  // Resolve JSON path at repo root: ../../BookStore.books.json
-  const jsonPath = path.resolve(__dirname, "..", "..", "BookStore.books.json");
-  if (!fs.existsSync(jsonPath)) {
-    console.error("Seed file not found:", jsonPath);
+  const candidatePaths = [
+    path.resolve(__dirname, "..", "..", "BookStore.books.json"),
+    path.resolve(__dirname, "..", "BookStore.books.json"),
+    path.resolve(process.cwd(), "BookStore.books.json"),
+    path.resolve(process.cwd(), "..", "BookStore.books.json"),
+  ];
+
+  const jsonPath = candidatePaths.find((p) => fs.existsSync(p));
+  if (!jsonPath) {
+    console.error("Seed file not found. Checked:", candidatePaths);
     process.exit(1);
   }
 

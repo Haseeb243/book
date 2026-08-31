@@ -19,7 +19,7 @@ Docker Containers (MongoDB, Backend, Frontend)
 ## Components Configured
 
 ### 1. GitHub Webhook
-- **URL**: `http://ec2-3-85-243-204.compute-1.amazonaws.com:8080/github-webhook/`
+- **URL**: `http://[IP_ADDRESS]/github-webhook/`
 - **Content Type**: application/json
 - **Events**: Push events to `main` branch
 - **Status**: ✅ Active and tested (ping successful)
@@ -81,14 +81,14 @@ git push origin main
 ```
 
 ### Option 2: Trigger manual build
-1. Go to http://ec2-3-85-243-204.compute-1.amazonaws.com:8080/job/BookStore-Deploy/
+1. Go to http://[IP_ADDRESS]/job/BookStore-Deploy/
 2. Click "Build Now"
 3. Monitor the Console Output
 
 ## Monitoring Builds
 
 ### Jenkins Dashboard
-- **Job Page**: http://ec2-3-85-243-204.compute-1.amazonaws.com:8080/job/BookStore-Deploy/
+- **Job Page**: http://[IP_ADDRESS]/job/BookStore-Deploy/
 - Click on build number (e.g., #1) to see details
 - Click "Console Output" to see real-time logs
 
@@ -109,7 +109,7 @@ git push origin main
 **Solution**:
 ```bash
 # SSH to deployment server
-ssh -i /home/kali/Downloads/key.pem ubuntu@ec2-18-215-168-23.compute-1.amazonaws.com
+ssh -i /home/kali/Downloads/key.pem ubuntu@[IP_ADDRESS]
 
 # Verify Docker is running
 docker ps
@@ -146,7 +146,7 @@ If a deployment goes wrong:
 
 ```bash
 # SSH to deployment server
-ssh -i /home/kali/Downloads/key.pem ubuntu@ec2-18-215-168-23.compute-1.amazonaws.com
+ssh -i /home/kali/Downloads/key.pem ubuntu@[IP_ADDRESS]
 
 # Navigate to project
 cd /home/ubuntu/book
@@ -163,8 +163,8 @@ docker compose up -d
 
 ## URLs
 
-- **Jenkins**: http://ec2-3-85-243-204.compute-1.amazonaws.com:8080/
-- **Production App**: http://ec2-18-215-168-23.compute-1.amazonaws.com/
+- **Jenkins**: http://[IP_ADDRESS]/
+- **Production App**: http://[IP_ADDRESS]/
 - **GitHub Repo**: https://github.com/Haseeb243/book
 
 ## Next Steps
